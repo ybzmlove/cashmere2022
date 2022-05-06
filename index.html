@@ -5,33 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cashmere</title>
-    <link rel="shortcut icon" href="./img/footer_logo.jpg">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_res.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index_res.css">
 </head>
 <body>
 
+    <input type="radio" name="res_menu" id="open_menu">
+    <input type="radio" name="res_menu" id="close_menu">
+
     <div id="header">
-        <div class="wrap">
+        <label for="open_menu"><img src="./img/menu.svg" alt="메뉴 아이콘"></label>
+        <label for="close_menu"><img src="./img/close.svg" alt="닫기 아이콘"></label>
+        
+        <div class="wrap">           
             <div class="logo">
                 <a href="#"><img src="./img/logo.png" alt="캐시미어 로고"></a>
             </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">INTRO</a></li>
-                    <li><a href="#">STORY</a></li>
-                    <li><a href="#">JOURNAL</a></li>
-                    <li><a href="#">STORES</a></li>
+                    <li class="intro"><a href="#">INTRO</a></li>
+                    <li class="story"><a href="#">STORY</a></li>
+                    <li class="journal"><a href="#">JOURNAL</a></li>
+                    <li class="stores"><a href="#">STORES</a></li>
                 </ul>
             </nav>
             <div class="sns">
                 <ul>
-                    <li><a href="#"><img src="./img/fb_icon.png"
+                    <li><a href="#" target="_blank"><img src="./img/fb_icon.png"
                         onmouseover="this.src='./img/fb_icon_hover.png'" onmouseout="this.src='./img/fb_icon.png'" alt=""></a>
                     </li>
-                    <li><a href="#"><img src="./img/insta_icon.png"
+                    <li><a href="#" target="_blank"><img src="./img/insta_icon.png"
                         onmouseover="this.src='./img/insta_icon_hover.png'" onmouseout="this.src='./img/insta_icon.png'" alt=""></a>
                     </li>
-                    <li><a href="#"><img src="./img/youtube_icon.png"
+                    <li><a href="#" target="_blank"><img src="./img/youtube_icon.png"
                         onmouseover="this.src='./img/youtube_icon_hover.png'" onmouseout="this.src='./img/youtube_icon.png'" alt=""></a>
                     </li>
                 </ul>
@@ -41,7 +50,7 @@
 
     <div id="banner">
         <div class="b_wrap">
-            <h2>A stylish splurge for women</h2>
+            <h2 class="font_great">A stylish splurge for women</h2>
         </div>
     </div>
     <div class="hideBg">
@@ -222,8 +231,8 @@
                 <div class="company">
                     <a href="#">NEWS & NOTICE</a>
                     <a href="#">PRIVACY</a>
-                    <a href="#">presentive@cashmere.com</a>
-                    <a href="#">+82 2 588 0880</a>
+                    <a href="mailto:presentive@cashmere.com">presentive@cashmere.com</a>
+                    <a href="tel:008225880880">+82 2 588 0880</a>
                 </div>
                 <div class="f_sns">
                     <ul>
@@ -261,5 +270,11 @@
             var marker = new google.maps.Marker({ position: uluru, map: map }); 
         }
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="./js/script.js"></script>
+
+
 </body>
 </html>
